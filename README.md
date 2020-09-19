@@ -15,3 +15,31 @@ Since this process is key to your business's success, you need to make sure that
 
 * Run a script on your web server to monitor system health.
 * Send an email with an alert if the server is ever unhealthy.
+
+## Scipts
+
+`upload.py`
+* Converts images to .jpeg
+* Resizes the images
+* Uploads the images to designated URL
+
+`reports.py`
+* Generates a PDF report for the email
+
+`report_email.py`
+* Generates email message with an optional attachment
+* Sends the message to the configured SMTP server
+
+`run.py`
+* Preprocesses the supplier data
+* Uploads the supplier data to designated URL
+* Uses reports.py to generate a PDF report for the email
+* Uses report_email.py to send the email
+
+`health_check.py`
+* Checks cpu_usage, disk_usage, memory_usage and localhost
+* Sends an email to the admin if any of the conditions have been violated
+
+
+
+
